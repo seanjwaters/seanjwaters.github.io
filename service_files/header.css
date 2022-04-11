@@ -1,0 +1,35 @@
+#navigation_pane {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2.5%;
+    padding-top: 1.5%;
+}
+
+#navigation_pane li {
+    display: inline;
+    padding: 5px;
+    font-size: 25px;
+    color: grey;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+
+#navigation_pane a { 
+    text-decoration: none;
+    color: grey;
+}
+
+
+#navigation_pane .active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+#navigation_pane li:hover { 
+    color: grey;
+    text-decoration: underline;
+}

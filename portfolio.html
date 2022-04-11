@@ -1,36 +1,91 @@
-<!-- Preliminary Code, Background, and Navbar -->
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">   
 <head>
-    <title>Sean Waters</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/tamulogo.png" type="image/x-icon"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="icon" href="/images/tamulogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="portfolio_files/master.css">
+    <link rel="stylesheet" href="portfolio_files/header.css">     
 </head>
-<body>
-<div class="background">
-<!--                               -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="service.html">Service</a>
-        <a href="qualification.html">Qualification</a>
-    </div>
-
-
-    <div class="app-text">
-        <h2>Portfolio</h2>
-
-        <ul>
-            <li>In Spring of 2019 I worked in the Aggie Research Program, helping Professor Brown in processing image data from NASA's SWIFT satellite. The purpose of our work was to reduce the visual noise in satellite images.</li>
-            
-            <li>Grow herbs using hydroponics. Mainly basil.</li>
-            <li>Setting up an bitcoin ASIC Miner in my closet has been a part of my venture in understanding and participating in the cryptocurrency world.</li>
-        </ul>  
-    </div>
-
-
-
-
-</div>
-</body>
-</html>
+<body class="fade-in" id="about_me_section" cz-shortcut-listen="true">
+    <ul id="navigation_pane" class="fade-in">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="qualification.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+    </ul>
+    
+        <h2>Completed Projects</h2>
+        <ul id="completed_projects">
+            <li>
+                Ethereum GPU Mining Rig
+                <p>
+                    I used my entire internship savings to invest in the hardware and software needed 
+                    to build an ethereum mining rig. It uses a custom unix-based OS and required extensive 
+                    configuration of the physical system to enable the use of 8 graphics cards. 
+                    One key concern was safety, and ensuring the overall power draw was safe.
+                </p>
+            </li>
+            <li>
+                NASA Hubble &amp; Swift Satellite De-Noiser
+                    <div id="swift">
+                        <img src="images/aggienova.jpg" alt="aggienova team picture" width="35%" height="35%">
+                        <p>
+                            My freshman year, I found myself on a small team helping Dr. Peter Brown
+                            filter throuhg .fits image data. My team and I were tasked with automating
+                            a portion of his workflow, specifically the part where he manually goes through
+                            each image to filter out the "background noise" that gets captured in satellite
+                            images, which appears as a dusty cloud, stretching over the whole picture.
+                            While basic graphics filters would make the image clearer, it would also degrade 
+                            the quality. Using the python astropy library among others, we were able to 
+                            remove the noise and retain image quality. Some of our results can be seen
+                            <a href="https://www.instagram.com/aggienovaswift/" target="_blank">here</a>.
+                        </p>
+                    </div>
+            </li>
+            <li>
+                Custom Keyboard
+                <div id="keyb">
+                    <img src="portfolio_files/keyb.jpg" alt="my_keyb"  width="50%" height="50%">
+                    <p>
+                        Building a custom keyboard is another way I gained experience with pcbs and soldering next 
+                        to my Proxmark 3 & Boosted Board. To build the custom wooden keyboard case I designed the 
+                        model in Rhino 3D, generating the gcode in DeskProto, and routing the design on a full size 
+                        CNC router. It was particularly tricky implementing a 5 degree angle.
+                    </p>
+                </div>
+            </li>
+            <li>
+                This Website!
+                <p>
+                    The website that you are currently using has been by first foray into using HTML/CSS. 
+                    This was originally assigned to me as a project in my Design Studio class, which I am 
+                    thankful for because it helped me gain the confidence I need to work on future projects. 
+                </p>
+            </li>
+            <li>
+                Synchronized Sensors for Vehicle Autopilot
+                    <p>
+                        This was my Senior Capstone project, where my team and I synchronized a Lidar and 
+                        Camera sensor to the PPS signal of a Reach M2 GPS. To do this, we used the RIAPs 
+                        platform, hosted on a BeagleBone Black, to process the GPS PPS signal and output 
+                        that to our Lidar and Camera sensors, synchronizing their output frequency for the 'Autodrive'  system.
+                    </p>
+                </div>
+            </li>
+            <li>
+                RFID Fob Duplicator
+                    <p>
+                        Losing my Apartment FOB key meant spending 50$ to replace it with the complex. 
+                        Of course, the fob itself can't be worth 50$. Why should having a spare key cost 50$? 
+                        So I bought a Proxmark RDV4 kit - a portable open source RFID tool. This tool 
+                        combined with a Kali-based Linux environment called ParrotSec, gave way to my discovery of 
+                        enterprise architecture and its complexity. I realized my interest and subsequently 
+                        enrolled in some relevant classes for my final semester.
+                    </p>
+                </div>
+            </li>
+        </ul>
+</body></html>
